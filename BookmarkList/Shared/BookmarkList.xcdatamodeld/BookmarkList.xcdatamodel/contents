@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20C69" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Bookmark" representedClassName="BookmarkEntity" syncable="YES" codeGenerationType="category">
+        <attribute name="id" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="imagePath" attributeType="String"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="price" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="rate" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="rateTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="subject" optional="YES" attributeType="String"/>
+        <attribute name="thumbnail" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="Bookmark" positionX="-63" positionY="-18" width="128" height="149"/>
+    </elements>
+</model>
