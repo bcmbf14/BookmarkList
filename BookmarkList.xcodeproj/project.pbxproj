@@ -25,12 +25,11 @@
 		A888789E25FA138E004541FC /* ListResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A888789D25FA138E004541FC /* ListResult.swift */; };
 		A88878A125FA1396004541FC /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88878A025FA1396004541FC /* Response.swift */; };
 		A88878AD25FA54DB004541FC /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88878AC25FA54DB004541FC /* DataManager.swift */; };
-		A88878B025FA5630004541FC /* DataManager+Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88878AF25FA5630004541FC /* DataManager+Person.swift */; };
+		A88878B025FA5630004541FC /* DataManager+Bookmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88878AF25FA5630004541FC /* DataManager+Bookmark.swift */; };
 		A88878D025FA6F03004541FC /* Bookmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88878CF25FA6F03004541FC /* Bookmark.swift */; };
 		A88878D525FA7037004541FC /* BookmarkEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88878D325FA7037004541FC /* BookmarkEntity+CoreDataClass.swift */; };
 		A88878E025FAE4FC004541FC /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88878DF25FAE4FC004541FC /* DetailViewController.swift */; };
 		A88878F925FB4510004541FC /* ImageCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88878F825FB4510004541FC /* ImageCacheManager.swift */; };
-		A888790025FB5341004541FC /* BookmarkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88878FF25FB5341004541FC /* BookmarkViewModel.swift */; };
 		A888790325FCC3D1004541FC /* Toaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = A888790225FCC3D1004541FC /* Toaster.swift */; };
 		A888790E25FCEDDC004541FC /* Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = A888790D25FCEDDC004541FC /* Sort.swift */; };
 		BC54CD9C3EFFD82AFDFE68E5 /* Pods_BookmarkList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CA04839AE8B9DE6D341C0E /* Pods_BookmarkList.framework */; };
@@ -58,12 +57,11 @@
 		A888789D25FA138E004541FC /* ListResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListResult.swift; sourceTree = "<group>"; };
 		A88878A025FA1396004541FC /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		A88878AC25FA54DB004541FC /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
-		A88878AF25FA5630004541FC /* DataManager+Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataManager+Person.swift"; sourceTree = "<group>"; };
+		A88878AF25FA5630004541FC /* DataManager+Bookmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataManager+Bookmark.swift"; sourceTree = "<group>"; };
 		A88878CF25FA6F03004541FC /* Bookmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bookmark.swift; sourceTree = "<group>"; };
 		A88878D325FA7037004541FC /* BookmarkEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BookmarkEntity+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
 		A88878DF25FAE4FC004541FC /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		A88878F825FB4510004541FC /* ImageCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheManager.swift; sourceTree = "<group>"; };
-		A88878FF25FB5341004541FC /* BookmarkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkViewModel.swift; sourceTree = "<group>"; };
 		A888790225FCC3D1004541FC /* Toaster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toaster.swift; sourceTree = "<group>"; };
 		A888790D25FCEDDC004541FC /* Sort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sort.swift; sourceTree = "<group>"; };
 		B4CA04839AE8B9DE6D341C0E /* Pods_BookmarkList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookmarkList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -165,7 +163,6 @@
 			isa = PBXGroup;
 			children = (
 				A839C98225F985E9006468FF /* ProductViewModel.swift */,
-				A88878FF25FB5341004541FC /* BookmarkViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -215,7 +212,7 @@
 				A88878D325FA7037004541FC /* BookmarkEntity+CoreDataClass.swift */,
 				A839C95F25F8B816006468FF /* BookmarkList.xcdatamodeld */,
 				A88878AC25FA54DB004541FC /* DataManager.swift */,
-				A88878AF25FA5630004541FC /* DataManager+Person.swift */,
+				A88878AF25FA5630004541FC /* DataManager+Bookmark.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -363,7 +360,7 @@
 				A88878E025FAE4FC004541FC /* DetailViewController.swift in Sources */,
 				A888790E25FCEDDC004541FC /* Sort.swift in Sources */,
 				A88878AD25FA54DB004541FC /* DataManager.swift in Sources */,
-				A88878B025FA5630004541FC /* DataManager+Person.swift in Sources */,
+				A88878B025FA5630004541FC /* DataManager+Bookmark.swift in Sources */,
 				A839C98325F985E9006468FF /* ProductViewModel.swift in Sources */,
 				A839C97025F8BB4C006468FF /* ListViewController.swift in Sources */,
 				A839C97325F8BB5D006468FF /* BookmarkViewController.swift in Sources */,
@@ -371,7 +368,6 @@
 				A839C98D25F9861B006468FF /* ProductServiceProtocol.swift in Sources */,
 				A88878F925FB4510004541FC /* ImageCacheManager.swift in Sources */,
 				A839C96125F8B816006468FF /* BookmarkList.xcdatamodeld in Sources */,
-				A888790025FB5341004541FC /* BookmarkViewModel.swift in Sources */,
 				A88878D525FA7037004541FC /* BookmarkEntity+CoreDataClass.swift in Sources */,
 				A839C98A25F98604006468FF /* Utils.swift in Sources */,
 				A888789925FA1320004541FC /* Product.swift in Sources */,

@@ -20,32 +20,14 @@ class ListViewController: UIViewController {
     let viewModel = TotalItemsViewModel()
     var disposeBag = DisposeBag()
     
-    var context: NSManagedObjectContext {
-        guard let app = UIApplication.shared.delegate as? AppDelegate else {
-            fatalError()
-        }
-        return app.persistentContainer.viewContext
-    }
-    
-    
 
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
         configureUI()
-        
         setupBindings()
-
-        
-        
-        tableView.reloadData()
-
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -79,18 +61,13 @@ class ListViewController: UIViewController {
                             
                             NotificationCenter.default.post(name:.bookmarkButtonIsSelected , object: nil)
                             Toaster.show()
-
                         }
-
                     }else {
                         if let entity = DataManager.shared.fetchBookmark().filter({$0.id == item.id}).first {
                             DataManager.shared.delete(entity: entity)
                             
-                            
                             Toaster.remove()
-
                         }
-                        
                     }
                 }
             }
@@ -113,9 +90,6 @@ class ListViewController: UIViewController {
             }
             .drive(viewModel.pageRelay)
             .disposed(by: disposeBag)
-        
-            
-        
     }
     
 }

@@ -26,6 +26,7 @@ class TotalItemsViewModel {
     init() {
         pageRelay
             .filter{$0<4}
+            .debug()
             .distinctUntilChanged()
             .flatMap(imageService.searchRx)
             .map(appendItems)
